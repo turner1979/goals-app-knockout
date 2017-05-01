@@ -1,0 +1,128 @@
+html, body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #0099CC;
+    font-family: arial;
+    font-size: 16px;
+}
+
+p, ul {
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+
+/* Homepage */
+.card--home {
+  text-align: center;
+}
+
+.card--home__title {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 0.5em;
+  text-transform: lowercase;
+}
+
+.card--home__title strong {
+  font-weight: bold;
+}
+
+.card--home__icon {
+  color: #fff;
+}
+
+.card--home__desc {
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+/* nav menu */
+.menu {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 1em;
+  color: #ffffff;
+  border: 1px solid #fff;
+  /*border-radius: 20px;*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.menu a.active {
+  background: #fff;
+  color: #0099CC;
+}
+
+/* footer bar */
+.footer-bar {
+  text-align: center;
+  font-size: 0.875em;
+  color: #fff;
+}
+
+/* Add goal form */
+#addGoalForm  {
+    margin-bottom: 1em;
+}
+
+#addGoalForm input[type=text] {
+  float: left;
+  width: 75%;
+  border: none;
+  -webkit-border-appearance: none;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+#addGoalForm input[type=submit]{
+  float: left;
+  width: 25%;
+  border: none;
+  -webkit-border-appearance: none;
+  padding: 0.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: #F5B800;
+}
+
+.card--goal {
+  color: #fff;
+}
+
+.card--goal .card--goal__name {
+	float: left;
+	width: 60%;
+}
+
+.card--goal .card--goal__actions {
+	float: left;
+	width: 40%;
+  text-align: right;
+}
+
+.card--goal .card--goal__actions i {
+  margin-left: 0.5em;
+}
