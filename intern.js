@@ -48,6 +48,7 @@ define({
         paths: {
             // Libraries
             "home": "src/pages/home/home",
+            "goals": "src/pages/goals/goals",
             "text": "node_modules/requirejs-text/text",
             "knockout": "../node_modules/knockout/build/output/knockout-latest"
         }
