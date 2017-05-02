@@ -10,6 +10,8 @@ body {
     background: #0099CC;
     font-family: arial;
     font-size: 16px;
+    padding: 0;
+    margin: 0;
 }
 
 p, ul {
@@ -17,10 +19,16 @@ p, ul {
   margin-bottom: 1em;
 }
 
+.app {
+  height: 100%;
+}
+
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 1em;
+  height: 100%;
+  position: relative;
 }
 
 .clearfix:after {
@@ -65,6 +73,7 @@ p, ul {
   padding: 1em;
   color: #ffffff;
   border: 1px solid #fff;
+  border-right: none;
   /*border-radius: 20px;*/
   text-decoration: none;
   text-transform: uppercase;
@@ -74,6 +83,17 @@ p, ul {
 .menu a.active {
   background: #fff;
   color: #0099CC;
+}
+
+.menu a:first-of-type {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.menu a:last-of-type {
+  border-right: 1px solid #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /* footer bar */
