@@ -18,8 +18,10 @@ var requireJsRuntimeConfig = vm.runInNewContext(fs.readFileSync('src/app/require
             'requireLib',
             'components/app/app',
             'components/nav-bar/nav-bar',
+            'components/footer-bar/footer-bar',
             'pages/home/home',
-            'pages/about/about'
+            'pages/about/about',
+            'pages/goals/goals'
         ],
         insertRequire: ['app/startup'],
         bundles: {
@@ -125,4 +127,3 @@ gulp.task('intern-web', function () {
             open: 'http://localhost:8080/node_modules/intern/client.html?config=intern'
         }));
 });
-
