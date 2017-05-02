@@ -20,6 +20,10 @@ p, ul {
   line-height: 1.5;
 }
 
+p strong {
+  font-weight: bold;
+}
+
 .app {
   height: 100%;
 }
@@ -153,4 +157,20 @@ p, ul {
 
 .card--goal .card--goal__actions i {
   margin-left: 0.5em;
+}
+
+/* card stats */
+.card--stats {
+  background: #007399;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.card--stats p {
+  margin-bottom: 0;
+}
+
+.card--stats p strong {
+  color: #F5B800;
 }

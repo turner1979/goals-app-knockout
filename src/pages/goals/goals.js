@@ -23,6 +23,24 @@ define(["knockout", "text!./goals.html"], function(ko, goalsTemplate) {
       new Goal('Goal 4', false)
     ]);
 
+    self.completedGoals = ko.observableArray();
+    self.remainingGoals = ko.observableArray();
+
+    self.filterGoals = ko.computed(function() {
+
+        self.completedGoals.removeAll();
+        self.remainingGoals.removeAll();
+
+        for(var i=0;i<self.goals().length;i++){
+          if(self.goals()[i].completed()){
+            self.completedGoals.push(self.goals()[i]);
+          }
+          else {
+            self.remainingGoals.push(self.goals()[i]);
+          }
+        }
+    });
+
     self.addEditGoal = function(goal){
 
       if(!self.editMode()){
