@@ -124,9 +124,10 @@ p strong {
   float: left;
   width: 75%;
   border: none;
-  -webkit-border-appearance: none;
+  -webkit-ppearance: none;
   padding: 0.5em;
   font-size: 1em;
+  height: 2em;
 }
 
 #addGoalForm input[type=submit]{
@@ -138,6 +139,7 @@ p strong {
   font-size: 1em;
   text-transform: uppercase;
   background: #F5B800;
+  height: 2em;
 }
 
 .card--goal {
