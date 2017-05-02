@@ -1,28 +1,30 @@
 
 <div class="wrapper">
 
-  <form id="addGoalForm" data-bind="submit: addEditGoal, visible: goals().length < 10" class="clearfix">
+  <form id="addGoalForm" data-bind="submit: addEditGoal, visible: goals().length < 5" class="clearfix">
     <input type="text" name="newGoal" data-bind="value: newGoal" placeholder="Add a goal..." />
     <input type="submit" data-bind="visible: !editMode()" value="Add" />
     <input type="submit" data-bind="visible: editMode" value="Edit" />
   </form>
 
-  <div class="card--goal clearfix" data-bind="foreach: goals">
-    <div class="card--goal__name">
-      <p data-bind="text: name"></p>
-    </div>
-    <div class="card--goal__actions">
+  <div data-bind="foreach: goals">
+    <div class="card--goal clearfix">
+      <div class="card--goal__name">
+        <p data-bind="text: name"></p>
+      </div>
+      <div class="card--goal__actions">
 
-      <a data-bind="if: completed, click: $parent.toggleCompleted">
-        <i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i>
-      </a>
+        <a data-bind="if: completed, click: $parent.toggleCompleted">
+          <i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+        </a>
 
-      <a data-bind="ifnot: completed, click: $parent.toggleCompleted">
-        <i class="fa fa-square-o fa-lg" aria-hidden="true"></i>
-      </a>
+        <a data-bind="ifnot: completed, click: $parent.toggleCompleted">
+          <i class="fa fa-square-o fa-lg" aria-hidden="true"></i>
+        </a>
 
-      <a data-bind="click: $parent.editGoal"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
-      <a data-bind="click: $parent.removeGoal"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></a>
+        <a data-bind="click: $parent.editGoal"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+        <a data-bind="click: $parent.removeGoal"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></a>
+      </div>
     </div>
   </div>
 
