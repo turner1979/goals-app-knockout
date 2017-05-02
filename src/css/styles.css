@@ -17,6 +17,7 @@ body {
 p, ul {
   color: #fff;
   margin-bottom: 1em;
+  line-height: 1.5;
 }
 
 .app {
@@ -27,8 +28,6 @@ p, ul {
   max-width: 800px;
   margin: 0 auto;
   padding: 1em;
-  height: 100%;
-  position: relative;
 }
 
 .clearfix:after {
@@ -40,6 +39,11 @@ p, ul {
 /* Homepage */
 .card--home {
   text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card--home__title {
@@ -101,6 +105,10 @@ p, ul {
   text-align: center;
   font-size: 0.875em;
   color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Add goal form */
