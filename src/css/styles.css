@@ -168,6 +168,7 @@ p strong {
   color: #fff;
   text-align: center;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 .card--stats p {
